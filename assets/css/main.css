@@ -1,0 +1,9 @@
+main{
+    margin-top: 20%;
+}
+main hr{
+    background: rgb(248, 194, 247);
+    border: 0px;
+    height: 3px;
+    opacity: 1;
+}

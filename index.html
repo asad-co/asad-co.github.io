@@ -1,11 +1,252 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Syed Asad Mehmood</title>
+
+
+    <link rel="stylesheet" href="./assets/css/bootstrap.css">
+    <link rel="stylesheet" href="./assets/css/body.css">
+    <link rel="stylesheet" href="./assets/css/nav.css">
+    <link rel="stylesheet" href="./assets/css/section.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;600;700&display=swap" rel="stylesheet">
+
 </head>
+
 <body>
-    <h1>Portflio</h1>
+    <header>
+        <nav class="navbar navbar-expand-lg navbarTop fixed-top">
+            <div class="d-flex justify-content-between px-5 py-2 w-100">
+                <span class="text-white fs-3 fw-semibold">Portfolio</span>
+                <div class="d-flex">
+                    <ul class="list-inline list-inline-item px-4 fs-5 toplist">
+                        <a href="#home" class="list-inline-item text-decoration-none">Home</a>
+                        <a href="#about" class="list-inline-item text-decoration-none">About Me</a>
+                        <a href="#skills" class="list-inline-item text-decoration-none">Skills</a>
+                        <a href="#projects" class="list-inline-item text-decoration-none">Projects</a>
+                        <a href="#edu" class="list-inline-item text-decoration-none">Education</a>
+                        <a href="#contact" class="list-inline-item text-decoration-none">Contact Me</a>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+    <main class="mb-5 container-fluid">
+
+        <section id="home" class="d-flex justify-content-around flex-wrap px-5 mt-5">
+            <div class="w-50 maintxt fs-1">
+                <span class="text-white ">Hi! My name is</span>
+                <span class="  textspecial">Asad</span>
+                <br>
+                <span class="text-white ">and I am a passionate</span>
+                <span id="typedJS" class="textspecial"></span>
+            </div>
+            <div class="w-50"><img src="./assets/imgs/maintop.jpg" alt="" class="img-fluid"></div>
+        </section>
+
+
+        <hr class="my-5 mx-5" />
+
+        <section id="skills" class="mt-5 px-5">
+            about me
+        </section>
+
+
+        <hr class="my-5 mx-5" />
+
+        <section id="skills" class="mt-5 px-5">
+            <span class="fs-1 fw-semibold">My Skills</span>
+        </section>
+
+
+        <hr class="my-5 mx-5" />
+
+
+        <section id="projects" class="  mt-5 px-5">
+            <div>
+                <span class="fs-6">What I have done so far</span>
+                <br>
+                <span class="fs-1 fw-semibold">My Projects</span>
+            </div>
+
+            <hr class="my-5 mx-2" />
+            <div class="d-flex flex-row my-5 mx-5 projectitem">
+                <div class="d-flex flex-column mx-5">
+                    <span class="fs-2 fw-semibold textspecial mb-1">Frameswise App</span>
+                    <span class="fs-6 mb-3">build on MERN Stack</span>
+                    <span class="fs-5 mb-3">It is an AI based web application that scans user face and recommend them
+                        glasses
+                        based on their facial looks which suits them best</span>
+                    <span>Libraries used: face-api.js | mediapipe facemesh | color lab</span>
+                    <button class="mt-4 linkbtn p-2"><a href="https://app.frameswise.com"
+                            class=" text-decoration-none text-info">Check out website</a></button>
+                </div>
+                <div class="verticalline mx-5"></div>
+                <div class="mx-1 w-25 imgvertical"><a href="https://app.frameswise.com"><img
+                            src="./assets/imgs/logo.svg" class=""></a></div>
+            </div>
+
+
+            <hr class="my-5 mx-2" />
+            <div class="d-flex flex-row my-5 mx-5 projectitem">
+                <div class="d-flex flex-column mx-5">
+                    <span class="fs-2 fw-semibold textspecial mb-1">Cookxpert App</span>
+                    <span class="fs-6 mb-3">build on React JS and Express JS</span>
+                    <span class="fs-5 mb-3">It is an AI based web-app that automatically generates a perfect recipe for
+                        any styled dish with given ingreidents</span>
+                    <span>Libraries used: api.openai</span>
+                    <button class="mt-4 linkbtn p-2"><a href="https://www.cookxpert.com"
+                            class=" text-decoration-none text-info">Check out website</a></button>
+                </div>
+                <div class="verticalline mx-5"></div>
+                <div class="mx-1 w-25 imgvertical"><a href="https://app.frameswise.com"><img
+                            src="./assets/imgs/cookxpert.png" width="212px" height="84px"></a></div>
+            </div>
+
+
+
+
+
+
+        </section>
+
+        <hr class="my-5 mx-5" />
+
+        <section id="edu" class="mt-5 px-5">
+            <span class="fs-1 fw-semibold">Education</span>
+
+
+
+            <hr class="my-5 mx-2" />
+            <div>
+                <div>
+                    <img class="img-fluid" src="./assets/imgs/wec.png">
+                </div>
+                <span class="mt-2 fw-semibold fs-3">Wah Engineering College</span>
+                <br>
+                <span class="mt-2 fs-4">Bsc Electrical Engineering | Power Specialization</span>
+                <br>
+                <span class="mt-2 fs-5">Sep 2018 - July 2022</span>
+                <br>
+                <span class="mt-2 mb-5 fs-6">Passed with 3.54 CGPA</span>
+                <br>
+                <br>
+                <span class="mt-2 fs-3">Final Year Project</span>
+                <br>
+                <span class="mt-2 fs-5">Vision Based Obstacle Avoidance UAV</span>
+                <br>
+                <span class="fs-6">Artificial Intelligent model that can detect objects that appear in given frame.
+                    Frame could be from live webcam or a recorded video. I design a deep learning model YOLOV4 and SSD
+                    Mobile net and able to run on local machine as well as Google Collaboratory. I have experience in
+                    data gathering or samples collecting on which model is to be trained</span>
+                <br>
+                <br>
+                <span class="mt-5 fs-3">Other Projects</span>
+                <ul>
+                    <li>Bus Reservation using C++</li>
+                    <li>Banking System using C++</li>
+                    <li>Fire Alarm System</li>
+                    <li>Inverted Pendulum control using PID</li>
+                    <li>HVDC Electric Transmission system</li>
+                </ul>
+            </div>
+
+
+            <hr class="my-5 mx-2" />
+            <div>
+                <div>
+                    <img class="img-fluid" src="./assets/imgs/wca.jfif">
+                </div>
+                <span class="mt-2 fw-semibold fs-3">Wah College of Accountancy</span>
+                <br>
+                <span class="mt-2 fs-4">Fsc Pre Engineering</span>
+                <br>
+                <span class="mt-2 fs-5">April 2016 - May 2018</span>
+                <br>
+                <span class="mt-2 fs-6">Passed with 80% marks</span>
+            </div>
+
+
+
+            <hr class="my-5 mx-2" />
+            <div>
+                <div>
+                    <img class="img-fluid" src="./assets/imgs/pofmodel.jfif">
+                </div>
+                <span class="mt-2 fw-semibold fs-3">POF Model High School</span>
+                <br>
+                <span class="mt-2 fs-4">Matric Science</span>
+                <br>
+                <span class="mt-2 fs-5">March 2014 - April 2016</span>
+                <br>
+                <span class="mt-2 fs-6">Passed with 80% marks</span>
+            </div>
+
+
+
+
+        </section>
+
+
+        <hr class="my-5 mx-5" />
+
+        <section id="contact" class="mt-5 px-5">
+            <span class="fs-1 fw-bold">Contact Me</span>
+            <br>
+            <span class="fs-4 mt-3">You can contact me on my email</span>
+            <br>
+            <span id="email" class="mt-2">syedasadm2001@gmail.com</span>
+            <img onclick="copyText()" width="50px" src="./assets/imgs/copy.png" alt="">
+
+            <span id="copytxt" class="fs-6 text-white"></span>
+            <br><br>
+            <img width="50px" src="./assets/imgs/linkedin.png" alt="">
+            <a class="mx-2 text-white" href="https://www.linkedin.com/in/syed-asad-mehmood-2531b1234/">Visit My Linkedin
+                Profile</a>
+            </div>
+            <br><br>
+            <img width="50px" src="./assets/imgs/git.png" alt="">
+            <a class="mx-2 text-white" href="https://github.com/asad-co">Visit My Github Profile</a>
+            </div>
+        </section>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+        integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="./assets/js/typed.js"></script>
+
+    <script>
+        function copyText() {
+            var copyText = document.querySelector('#email');
+            var tempTextArea = document.createElement('textarea');
+            tempTextArea.value = copyText.textContent;
+            document.body.appendChild(tempTextArea);
+            tempTextArea.select();
+            document.execCommand('copy');
+            document.body.removeChild(tempTextArea);
+
+            // You can also provide some visual feedback to the user
+            var copyButton = document.querySelector('#copytxt');
+            copyButton.innerText = 'Copied!';
+            setTimeout(function () {
+                copyButton.innerText = '';
+            }, 2000);
+        }
+    </script>
 </body>
+
 </html>
