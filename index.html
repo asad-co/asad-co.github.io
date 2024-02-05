@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="./assets/css/main.css">
     <link rel="stylesheet" href="./assets/css/card.css">
     <link rel="stylesheet" href="./assets/css/footer.css">
+    <link rel="stylesheet" href="./assets/css/projectItem.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,99 +25,88 @@
 
 <body>
     <header>
-        <!-- <nav class="navbar navbar-expand-lg navbarTop fixed-top">
-            <div class="d-flex justify-content-between px-5 py-2 w-100">
-                <span class="text-white fs-3 fw-semibold">Asad's Portfolio</span>
-                
 
-
-
-                <div class="d-flex">
-                    <ul class="list-inline list-inline-item px-4 fs-5 toplist">
-                        <a href="#home" class="list-inline-item text-decoration-none">Home</a>
-                        <a href="#about" class="list-inline-item text-decoration-none">About Me</a>
-                        <a href="#skills" class="list-inline-item text-decoration-none">Skills</a>
-                        <a href="#projects" class="list-inline-item text-decoration-none">Projects</a>
-                        <a href="#edu" class="list-inline-item text-decoration-none">Education</a>
-                        <a href="#contact" class="list-inline-item text-decoration-none">Contact Me</a>
-                    </ul>
-                </div> 
-            </div>
-        </nav>  -->
 
         <nav class="navbar navbar-expand-lg navbarTop fixed-top">
             <div class="container-fluid d-flex justify-content-between w-100">
-              <a class="navbar-brand fs-3 text-white fw-semibold" href="#home">Navbar</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav px-4 fs-5 toplist">
-                  <li class="nav-item mx-2">
-                    <a href="#home" class="list-inline-item text-decoration-none">Home</a>
-                  </li>
-                  <li class="nav-item mx-2">
-                    <a href="#about" class="list-inline-item text-decoration-none">About Me</a>
-                  </li>
+                <a class="navbar-brand fs-3 text-white fw-semibold" href="#home">Portfolio</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <img src="./assets/imgs/hamburger.svg" alt="" srcset="">
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav px-4 fs-5 toplist">
+                        <li class="nav-item mx-2">
+                            <a href="#home" class="list-inline-item text-decoration-none">Home</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a href="#about" class="list-inline-item text-decoration-none">About Me</a>
+                        </li>
 
 
-                  <li class="nav-item mx-2">
-                    <a href="#skills" class="list-inline-item text-decoration-none">Skills</a>
-                  </li>
+                        <li class="nav-item mx-2">
+                            <a href="#skills" class="list-inline-item text-decoration-none">Skills</a>
+                        </li>
 
 
-                  <li class="nav-item mx-2">
-                    <a href="#projects" class="list-inline-item text-decoration-none">Projects</a>
-                  </li>
-                  <li class="nav-item mx-2">
-                    <a href="#edu" class="list-inline-item text-decoration-none">Education</a>
-                  </li>
+                        <li class="nav-item mx-2">
+                            <a href="#projects" class="list-inline-item text-decoration-none">Projects</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a href="#edu" class="list-inline-item text-decoration-none">Education</a>
+                        </li>
 
 
-                  <li class="nav-item mx-2">
-                   
-                    <a href="#contact" class="list-inline-item text-decoration-none">Contact Me</a>
-                  </li>
-                 
-                  
-                </ul>
-              </div>
+                        <li class="nav-item mx-2">
+
+                            <a href="#contact" class="list-inline-item text-decoration-none">Contact Me</a>
+                        </li>
+
+
+                    </ul>
+                </div>
             </div>
-          </nav>
-  
+        </nav>
+
 
     </header>
 
     <main class="mb-5 container-fluid">
 
-        <section id="home" class="d-flex justify-content-around flex-wrap px-5 mt-5">
-            <div class="w-50 maintxt fs-1">
+        <section id="home" class="d-flex flex-wrap flex-md-nowrap px-5 mt-5 ">
+            <div class="maintxt fs-1 m-2 partial">
                 <span class="text-white ">Hi! My name is</span>
                 <span class="  textspecial">Asad</span>
                 <br>
                 <span class="text-white ">and I am a passionate</span>
                 <span id="typedJS" class="textspecial"></span>
                 <br><br>
-                <button class="btn btntop"><a href="https://www.linkedin.com/in/syed-asad-mehmood-2531b1234/"><img width="50px" src="./assets/imgs/linkedin.png" alt=""></a></button>
-                <button class="btn btntop"><a href="https://github.com/asad-co"><img width="50px" src="./assets/imgs/git.png" alt=""></a></button>
-                <button class="btn btnresume"><a href="./assets/resume/resume.pdf">Download Resume</a></button>
+                <div class="d-flex flex-wrap">
+                    <button class="btn btntop"><a href="https://www.linkedin.com/in/syed-asad-mehmood-2531b1234/"><img
+                                width="50px" src="./assets/imgs/linkedin.png" alt=""></a></button>
+                    <button class="btn btntop"><a href="https://github.com/asad-co"><img width="50px"
+                                src="./assets/imgs/git.png" alt=""></a></button>
+                    <button class="btn btnresume"><a href="./assets/resume/resume.pdf">Download Resume</a></button>
+                </div>
             </div>
-            <div class="w-50"><img src="./assets/imgs/maintop.jpg" alt="" class="img-fluid"></div>
+            <div class="m-2 partial"><img src="./assets/imgs/maintop.jpg" alt="" class="img-fluid"></div>
         </section>
 
 
         <hr class="my-5 mx-5" />
 
-        <section id="about" class="mt-5 px-5">
+        <section id="about" class="mt-5 px-5 ">
             <span class="fs-6">How am I doing</span>
             <br>
             <span class="fs-1 fw-semibold">About Me</span>
-            <div class="d-flex justify-content-between flex-sm-wrap flex-md-nowrap">
+            <div class="d-flex justify-content-between flex-wrap flex-md-nowrap">
                 <div><img class="img-fluid" src="./assets/imgs/aboutme.png" alt="" srcset=""></div>
                 <div class="maintxt ">
-                    <span class="fs-4">I am programming enthusiastic. I have always an eagerness to learn more software and latest technology.</span> 
+                    <span class="fs-4">I am programming enthusiastic. I have always an eagerness to learn more software
+                        and latest technology.</span>
                     <br><br>
-                    <span class="fs-4 mt-2">I used to advance on my own and I highly believe on self learning. I learn myself all the skills on youtube and all free and will continue to learn more.</span>
+                    <span class="fs-4 mt-2">I used to advance on my own and I highly believe on self learning. I learn
+                        myself all the skills on youtube and all free and will continue to learn more.</span>
                 </div>
             </div>
         </section>
@@ -137,7 +127,8 @@
                     <div class="card-body">
                         <h5 class="card-title fw-bold">Frontend Development</h5>
                         <h6 class="card-subtitle mb-2 ">HTML | CSS | JS</h6>
-                        <p class="card-text">I have more than one year experience of developing a frontend design to butify the websites and improve UI/UX flow.</p>
+                        <p class="card-text">I have more than one year experience of developing a frontend design to
+                            butify the websites and improve UI/UX flow.</p>
                     </div>
                 </div>
 
@@ -147,7 +138,9 @@
                     <div class="card-body">
                         <h5 class="card-title fw-bold">Backend Development</h5>
                         <h6 class="card-subtitle mb-2 ">Node JS | Express JS</h6>
-                        <p class="card-text">I have more than 8 month expereince of designing web API using node JS and express JS to keep a frontend website dynamic, keping many important keys protected and safe from cyber attacks.</p>
+                        <p class="card-text">I have more than 8 month expereince of designing web API using node JS and
+                            express JS to keep a frontend website dynamic, keping many important keys protected and safe
+                            from cyber attacks.</p>
                     </div>
                 </div>
 
@@ -157,7 +150,9 @@
                     <div class="card-body">
                         <h5 class="card-title fw-bold">MERN Stack Development</h5>
                         <h6 class="card-subtitle mb-2 ">React JS | Node JS | Express JS | Mongo DB</h6>
-                        <p class="card-text">I have a 7 month experience in building a MERN stack web application. I made web application to not only be dynamic but also keeping database in storage and made sure its availablity when it is required.</p>
+                        <p class="card-text">I have a 7 month experience in building a MERN stack web application. I
+                            made web application to not only be dynamic but also keeping database in storage and made
+                            sure its availablity when it is required.</p>
                     </div>
                 </div>
 
@@ -166,7 +161,8 @@
                     <div class="card-body">
                         <h5 class="card-title fw-bold">Android App Development</h5>
                         <h6 class="card-subtitle mb-2 ">JAVA | Android Studio</h6>
-                        <p class="card-text">I also have a experience in building android apps that are not only static but dynammic as well.</p>
+                        <p class="card-text">I also have a experience in building android apps that are not only static
+                            but dynammic as well.</p>
                     </div>
                 </div>
 
@@ -176,7 +172,8 @@
                     <div class="card-body">
                         <h5 class="card-title fw-bold">Firebase</h5>
                         <h6 class="card-subtitle mb-2 ">Google</h6>
-                        <p class="card-text">I mostly used firebase as a databse for my android apps and iOS apps to keep user information safe and secure.</p>
+                        <p class="card-text">I mostly used firebase as a databse for my android apps and iOS apps to
+                            keep user information safe and secure.</p>
                     </div>
                 </div>
 
@@ -187,7 +184,8 @@
                     <div class="card-body">
                         <h5 class="card-title fw-bold">iOS App Development</h5>
                         <h6 class="card-subtitle mb-2 ">Swift | Xcode</h6>
-                        <p class="card-text">I built apps for iOS on swift language. I also have basic knowledge of how xcode works and to built app on it.</p>
+                        <p class="card-text">I built apps for iOS on swift language. I also have basic knowledge of how
+                            xcode works and to built app on it.</p>
                     </div>
                 </div>
 
@@ -197,7 +195,8 @@
                     <div class="card-body">
                         <h5 class="card-title fw-bold">AI model training</h5>
                         <h6 class="card-subtitle mb-2 ">Python</h6>
-                        <p class="card-text">I have built custom object detection and landmark detection model using tensorflow framework provided by google.</p>
+                        <p class="card-text">I have built custom object detection and landmark detection model using
+                            tensorflow framework provided by google.</p>
                     </div>
                 </div>
 
@@ -207,7 +206,8 @@
                     <div class="card-body">
                         <h5 class="card-title fw-bold">GUI Base Simple Games</h5>
                         <h6 class="card-subtitle mb-2 ">Python</h6>
-                        <p class="card-text">I used python to built graphical user interface for users, alongside I also build some games to polish my programming my python coding skills.</p>
+                        <p class="card-text">I used python to built graphical user interface for users, alongside I also
+                            build some games to polish my programming my python coding skills.</p>
                     </div>
                 </div>
 
@@ -217,7 +217,9 @@
                     <div class="card-body">
                         <h5 class="card-title fw-bold">Ethical Hacker</h5>
                         <h6 class="card-subtitle mb-2 ">Many Tools</h6>
-                        <p class="card-text">I am an ethical hacker which means I used to hack or test websites with their owners permissions and find out flaws or vulnerabilities their web apps have. As a web developer I also use my skills on my apps to make sure they are safe.</p>
+                        <p class="card-text">I am an ethical hacker which means I used to hack or test websites with
+                            their owners permissions and find out flaws or vulnerabilities their web apps have. As a web
+                            developer I also use my skills on my apps to make sure they are safe.</p>
                     </div>
                 </div>
 
@@ -227,7 +229,9 @@
                     <div class="card-body">
                         <h5 class="card-title fw-bold">Bug Bounty Hunter</h5>
                         <h6 class="card-subtitle mb-2 ">Many Tools</h6>
-                        <p class="card-text">I am a bug bounty hunter of limited experience of 1 month. I am basically a begineer but I am having good knowledge about gatering intel and doing reconnaissance and then scanning their sites for major vulnerabilites like OWASP and beyond.</p>
+                        <p class="card-text">I am a bug bounty hunter of limited experience of 1 month. I am basically a
+                            begineer but I am having good knowledge about gathering intel and doing reconnaissance and
+                            then scanning their sites for major vulnerabilites like OWASP and beyond.</p>
                     </div>
                 </div>
 
@@ -241,7 +245,7 @@
         <hr class="my-5 mx-5" />
 
 
-        <section id="projects" class="  mt-5 px-5">
+        <section id="projects" class="  mt-5 px-4">
             <div>
                 <span class="fs-6">What I have done so far</span>
                 <br>
@@ -249,8 +253,8 @@
             </div>
 
             <hr class="my-5 mx-2" />
-            <div class="d-flex flex-row my-5 mx-5 projectitem">
-                <div class="d-flex flex-column mx-5">
+            <div class="my-5 mx-1 projectitem ">
+                <div class="d-flex flex-column m-1 leftitem">
                     <span class="fs-2 fw-semibold textspecial mb-1">Frameswise App</span>
                     <span class="fs-6 mb-3">build on MERN Stack</span>
                     <span class="fs-5 mb-3">It is an AI based web application that scans user face and recommend them
@@ -261,14 +265,14 @@
                             class=" text-decoration-none text-info">Check out website</a></button>
                 </div>
                 <div class="verticalline mx-5"></div>
-                <div class="mx-1 w-25 imgvertical"><a href="https://app.frameswise.com"><img
+                <div class="m-1  imgvertical"><a href="https://app.frameswise.com"><img
                             src="./assets/imgs/logo.svg" class=""></a></div>
             </div>
 
 
             <hr class="my-5 mx-2" />
-            <div class="d-flex flex-row my-5 mx-5 projectitem">
-                <div class="d-flex flex-column mx-5">
+            <div class=" my-5 mx-1 projectitem">
+                <div class="d-flex flex-column m-1  leftitem">
                     <span class="fs-2 fw-semibold textspecial mb-1">Cookxpert App</span>
                     <span class="fs-6 mb-3">build on React JS and Express JS</span>
                     <span class="fs-5 mb-3">It is an AI based web-app that automatically generates a perfect recipe for
@@ -277,9 +281,9 @@
                     <button class="mt-4 linkbtn p-2"><a href="https://www.cookxpert.com"
                             class=" text-decoration-none text-info">Check out website</a></button>
                 </div>
-                <div class="verticalline mx-5"></div>
-                <div class="mx-1 w-25 imgvertical"><a href="https://app.frameswise.com"><img
-                            src="./assets/imgs/cookxpert.png" width="212px" height="84px"></a></div>
+                <div class="verticalline"></div>
+                <div class="m-1  imgvertical"><a href="https://cookxpert.com">
+                    <img src="./assets/imgs/cookxpert.png" width="212px" height="84px"></a></div>
             </div>
 
 
@@ -382,21 +386,21 @@
             <span id="copytxt" class="fs-6 text-white"></span>
             <br><br>
             <a class="text-decoration-none" href="https://www.linkedin.com/in/syed-asad-mehmood-2531b1234/">
-            <img width="50px" src="./assets/imgs/linkedin.png" alt="">
-            <span class="mx-2 text-white text-decoration-underline" >Visit My Linkedin
-                Profile</span></a>
+                <img width="50px" src="./assets/imgs/linkedin.png" alt="">
+                <span class="mx-2 text-white text-decoration-underline">Visit My Linkedin
+                    Profile</span></a>
             </div>
             <br><br>
-            <a class="text-decoration-none"  href="https://github.com/asad-co">
-            <img width="50px" src="./assets/imgs/git.png" alt="">
-            <span class="mx-2 text-white text-decoration-underline">Visit My Github Profile</span></a>
+            <a class="text-decoration-none" href="https://github.com/asad-co">
+                <img width="50px" src="./assets/imgs/git.png" alt="">
+                <span class="mx-2 text-white text-decoration-underline">Visit My Github Profile</span></a>
             </div>
         </section>
     </main>
 
     <footer class="p-5 ">
         <span class="fs-4">
-            &#169; 2024 CopyRight 
+            &#169; 2024 CopyRight
         </span>
         <br>
         <span class="fs-4">

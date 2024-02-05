@@ -12,23 +12,16 @@ section hr{
     height: 3px;
     opacity: 1;
 }
-.verticalline{
-    height: auto;
-    width: 3px;
-    background: rgb(248, 194, 247);
 
-}
 
-.projectitem{
-    justify-content: center;
-}
 
-.imgvertical{
-    align-items: center;
-    justify-content: center;
-    margin: auto;
 
-}
 .linkbtn{
     background-color: rgb(1, 1, 74);
+}
+
+@media (min-width:700px) {
+    .partial{
+        width: 50%;
+    }
 }
