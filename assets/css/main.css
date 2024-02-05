@@ -23,6 +23,7 @@ main hr{
 }
 .btnresume:hover{
     background: blueviolet;
+    a {color: rgb(248, 194, 247);}
 }
 .btnresume a:hover{
     color: rgb(248, 194, 247);
