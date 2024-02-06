@@ -13,7 +13,12 @@ section hr{
     opacity: 1;
 }
 
-
+.projectlink{
+    width: fit-content;
+    text-decoration: none;
+    padding: 20px;
+    box-shadow: -1px -1px ;
+}
 
 
 .linkbtn{
