@@ -16,6 +16,8 @@
     <link rel="stylesheet" href="./assets/css/card.css">
     <link rel="stylesheet" href="./assets/css/footer.css">
     <link rel="stylesheet" href="./assets/css/projectItem.css">
+    <link rel="stylesheet" href="./assets/css/services.css">
+    <link rel="stylesheet" href="./assets/css/services_copied.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,7 +29,7 @@
     <header>
 
 
-        <nav class="navbar navbar-expand-lg navbarTop fixed-top">
+        <nav id="nav" class="navbar navbar-expand-lg navbarTop fixed-top">
             <div class="container-fluid d-flex justify-content-between w-100">
                 <a class="navbar-brand fs-3 text-white fw-semibold" href="#home">Portfolio</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -39,10 +41,12 @@
                         <li class="nav-item mx-2">
                             <a href="#home" class="list-inline-item text-decoration-none">Home</a>
                         </li>
-                        <li class="nav-item mx-2">
-                            <a href="#about" class="list-inline-item text-decoration-none">About Me</a>
-                        </li>
 
+
+
+                        <li class="nav-item mx-2">
+                            <a href="#services" class="list-inline-item text-decoration-none">Services</a>
+                        </li>
 
                         <li class="nav-item mx-2">
                             <a href="#skills" class="list-inline-item text-decoration-none">Skills</a>
@@ -51,6 +55,10 @@
 
                         <li class="nav-item mx-2">
                             <a href="#projects" class="list-inline-item text-decoration-none">Projects</a>
+                        </li>
+
+                        <li class="nav-item mx-2">
+                            <a href="#about" class="list-inline-item text-decoration-none">About Me</a>
                         </li>
                         <li class="nav-item mx-2">
                             <a href="#edu" class="list-inline-item text-decoration-none">Education</a>
@@ -73,20 +81,21 @@
 
     <main class="mb-5 container-fluid">
 
-        <section id="home" class="d-flex flex-wrap flex-md-nowrap px-5 mt-5 ">
-            <div class="maintxt fs-1 m-2 partial">
+        <section id="home" class="d-flex  mt-5 sectionPaddingX">
+            <div class="maintxt fs-1  partial">
                 <span class="text-white ">Hi! My name is</span>
                 <span class="  textspecial">Asad</span>
                 <br>
                 <span class="text-white ">and I am a passionate</span>
-                <span id="typedJS" class="textspecial"></span>
+                <br>
+                <span id="typedJS" class="textspecial textGenerate"></span>
                 <br><br>
                 <div class="d-flex flex-wrap">
                     <button class="btn btntop"><a href="https://www.linkedin.com/in/syed-asad-mehmood-2531b1234/"><img
                                 width="50px" src="./assets/imgs/linkedin.png" alt=""></a></button>
                     <button class="btn btntop"><a href="https://github.com/asad-co"><img width="50px"
                                 src="./assets/imgs/git.png" alt=""></a></button>
-                    <a class="btn btnresume"  href="./assets/resume/resume.pdf">Download Resume</a>
+                    <a class="btn btnresume" href="./assets/resume/resume.pdf">Download Resume</a>
                 </div>
             </div>
             <div class="m-2 partial"><img src="./assets/imgs/maintop.jpg" alt="" class="img-fluid"></div>
@@ -94,20 +103,105 @@
 
 
         <hr class="my-5 mx-5" />
-
-        <section id="about" class="mt-5 px-5 ">
-            <span class="fs-6">How am I doing</span>
-            <br>
-            <span class="fs-1 fw-semibold">About Me</span>
-            <div class="d-flex justify-content-between flex-wrap flex-md-nowrap">
-                <div><img class="img-fluid" src="./assets/imgs/aboutme.png" alt="" srcset=""></div>
-                <div class="maintxt ">
-                    <span class="fs-4">I am a programming enthusiast. I always have an eagerness to learn more about software and the latest technology.</span>
-                    <br><br>
-                    <span class="fs-4 mt-2">I advance on my own and strongly believe in self-learning. I learn all my skills through YouTube and other free resources, and I will continue to learn more.</span>
-                </div>
+        <section id="services" class="mt-5 sectionPaddingX">
+            <div class="d-flex justify-content-between">
+                <span class="fs-1 fw-semibold">Services</span>
+                <span class="sideText">50% discount on First Order!</span>
             </div>
+            <br>
+            <hr class="my-5 mx-2" />
+
+            <section class="plans__container">
+                <div class="plans">
+
+                    <div class="planItem__container">
+                        <!--free plan starts -->
+                        <div class="planItem planItem--free">
+
+                            <div class="card_service">
+                                <div class="card__header">
+                                    <div class="card__icon symbol symbol--rounded"></div>
+                                    <h2>Basic</h2>
+                                </div>
+                                <div class="card__desc">Built static website or mobile app
+                                </div>
+                            </div>
+
+                            <div class="price">$20-$50<span>/ project</span></div>
+
+                            <ul class="featureList">
+                                <li>Get a website or mobile App</li>
+                                <li>Mobile App both iOS and Android</li>
+                                <li>Cyber Resilience App</li>
+                                <li class="disabled">Both Mobile and Web App</li>
+                                <li class="disabled">Our UI/UX Design</li>
+                                <li class="disabled">Dynamic App</li>
+                            </ul>
+
+                            <a href="https://www.linkedin.com/in/syed-asad-mehmood-2531b1234/" class="button text-decoration-none button--white">Contact me on LinkedIn</a>
+                        </div>
+                        <!--free plan ends -->
+
+                        <!--pro plan starts -->
+                        <div class="planItem planItem--pro">
+                            <div class="card_service">
+                                <div class="card__header">
+                                    <div class="card__icon symbol symbol--rectangle"></div>
+                                    <h2 class="fs-5">Complete Package</h2>
+                                    <div class="card__label label">save 50%</div>
+                                </div>
+                                <div class="card__desc">Get a webapp and a mobile app for your product with server and database</div>
+                            </div>
+
+                            <div class="price">$50-$500<span>/ project</span></div>
+
+                            <ul class="featureList">
+                                <li>Both webapp and mobile app</li>
+                                <li >Server coding and configuration</li>
+                                <li >Database Setup</li>
+                                <li >Provide admin dashboard</li>
+                                <li>UI/UX provided</li>
+                                <li>Cyber Resilience App</li>
+                                <li>Chat support</li>
+                                <li>Analytics</li>
+                            </ul>
+
+                            <a href="https://www.linkedin.com/in/syed-asad-mehmood-2531b1234/" class="button button--pink text-decoration-none">Contact me on LinkedIn</a>
+                        </div>
+                        <!--pro plan ends -->
+
+                        <!--entp plan starts -->
+                        <div class="planItem planItem--entp">
+                            <div class="card_service">
+                                <div class="card__header">
+                                    <div class="card__icon"></div>
+                                    <h2>Hire Me!</h2>
+                                </div>
+                                <div class="card__desc">Hire me if you want me to work in a project collaboratively
+                                </div>
+                            </div>
+
+                            <div class="price">Let's Talk</div>
+
+                            <ul class="featureList">
+                                <li>Remote or onsite</li>
+                                <li>Web Development</li>
+                                <li>Mobile App Dev</li>
+                                <li>Cyber Security</li>
+                                <li>Server side coding</li>
+                                <li>Database Management</li>
+                            </ul>
+
+                            <a href="https://www.linkedin.com/in/syed-asad-mehmood-2531b1234/" class="button button--white text-decoration-none">Contact me on LinkedIn</a>
+                        </div>
+                        <!--entp plan ends -->
+
+                    </div>
+                </div>
+            </section>
         </section>
+
+
 
 
         <hr class="my-5 mx-5" />
@@ -259,11 +353,12 @@
                         glasses
                         based on their facial looks which suits them best</span>
                     <span>Libraries used: face-api.js | mediapipe facemesh | color lab</span>
-                    <a class="mt-4 linkbtn text-info projectlink" href="https://app.frameswise.com">Check out website</a>
+                    <a class="mt-4 linkbtn text-info projectlink" href="https://app.frameswise.com">Check out
+                        website</a>
                 </div>
                 <div class="verticalline"></div>
-                <div class="m-1  imgvertical"><a href="https://app.frameswise.com"><img
-                            src="./assets/imgs/logo.svg" class=""></a></div>
+                <div class="m-1  imgvertical"><a href="https://app.frameswise.com"><img src="./assets/imgs/logo.svg"
+                            class=""></a></div>
             </div>
 
 
@@ -275,12 +370,12 @@
                     <span class="fs-5 mb-3">It is an AI based web-app that automatically generates a perfect recipe for
                         any styled dish with given ingreidents</span>
                     <span>Libraries used: api.openai</span>
-                    <a  class="mt-4 linkbtn text-info projectlink" href="https://www.cookxpert.com"
-                            class=" ">Check out website</a>
+                    <a class="mt-4 linkbtn text-info projectlink" href="https://www.cookxpert.com" class=" ">Check out
+                        website</a>
                 </div>
                 <div class="verticalline"></div>
                 <div class="m-1  imgvertical"><a href="https://cookxpert.com">
-                    <img src="./assets/imgs/cookxpert.png" width="212px" height="150px"></a></div>
+                        <img src="./assets/imgs/cookxpert.png" width="212px" height="150px"></a></div>
             </div>
 
 
@@ -290,14 +385,35 @@
                 <div class="d-flex flex-column m-1  leftitem">
                     <span class="fs-2 fw-semibold textspecial mb-1">Kstom Glasses App</span>
                     <span class="fs-6 mb-3">build on Swift</span>
-                    <span class="fs-5 mb-3">It is iOS app which supported on iphone X or above models because it utilizes the feature of depth capturing of video or image. In this app a person face is scan by true depth camera we get exact measurements of face and design the glasses that fit perfectly for that person.</span>
+                    <span class="fs-5 mb-3">It is iOS app which supported on iphone X or above models because it
+                        utilizes the feature of depth capturing of video or image. In this app a person face is scan by
+                        true depth camera we get exact measurements of face and design the glasses that fit perfectly
+                        for that person.</span>
                     <span>Libraries used: ARkit | Google ML Kit</span>
                     <span class="text-info mt-2">This project was company based and it was never published</span>
-                   
+
                 </div>
                 <div class="verticalline"></div>
                 <div class="m-1  imgvertical">
-                    <img src="./assets/imgs/kstom.jpg" width="212px" height="212px"></div>
+                    <img src="./assets/imgs/kstom.jpg" width="212px" height="212px">
+                </div>
+            </div>
+
+
+            <hr class="my-5 mx-2" />
+            <div class=" my-5 mx-1 projectitem">
+                <div class="d-flex flex-column m-1  leftitem">
+                    <span class="fs-2 fw-semibold textspecial mb-1">Social Star</span>
+                    <span class="fs-6 mb-3">build on Java</span>
+                    <span class="fs-5 mb-3">A social media app designed for android to have friends, share posts or
+                        create a new one.</span>
+                    <span>Libraries used: Firebase Project </span>
+                    <a class="mt-4 linkbtn text-info projectlink" href="https://github.com/asad-co/SocialStar"
+                        class=" ">View on Github</a>
+                </div>
+                <div class="verticalline"></div>
+                <div class="m-1  imgvertical"><a href="https://github.com/asad-co/SocialStar">
+                        <img src="./assets/imgs/social_star.png" width="212px" height="212px"></a></div>
             </div>
 
 
@@ -306,14 +422,17 @@
                 <div class="d-flex flex-column m-1  leftitem">
                     <span class="fs-2 fw-semibold textspecial mb-1">FBISE Past Paper 2022</span>
                     <span class="fs-6 mb-3">build on Java</span>
-                    <span class="fs-5 mb-3">An android app which have multiple pdfs of past papers to help and guide new students</span>
+                    <span class="fs-5 mb-3">An android app which have multiple pdfs of past papers to help and guide new
+                        students</span>
                     <span>Libraries used: PDF Reader | Firebase Auth</span>
-                    <a  class="mt-4 linkbtn text-info projectlink" href="https://play.google.com/store/apps/details?id=com.assadcoorp.fbisepastpapers2022&hl=en&gl=US"
-                            class=" ">Check out project</a>
+                    <a class="mt-4 linkbtn text-info projectlink"
+                        href="https://play.google.com/store/apps/details?id=com.assadcoorp.fbisepastpapers2022&hl=en&gl=US"
+                        class=" ">Check out project</a>
                 </div>
                 <div class="verticalline"></div>
-                <div class="m-1  imgvertical"><a href="https://play.google.com/store/apps/details?id=com.assadcoorp.fbisepastpapers2022&hl=en&gl=US">
-                    <img src="./assets/imgs/fbise.PNG" width="212px" height="212px"></a></div>
+                <div class="m-1  imgvertical"><a
+                        href="https://play.google.com/store/apps/details?id=com.assadcoorp.fbisepastpapers2022&hl=en&gl=US">
+                        <img src="./assets/imgs/fbise.PNG" width="212px" height="212px"></a></div>
             </div>
 
             <hr class="my-5 mx-2" />
@@ -321,14 +440,17 @@
                 <div class="d-flex flex-column m-1  leftitem">
                     <span class="fs-2 fw-semibold textspecial mb-1">Easy and Simple MP3 Player</span>
                     <span class="fs-6 mb-3">build on Java</span>
-                    <span class="fs-5 mb-3">A music application in which you can play songs, by automatically detecting from phone or scanning any specific folder</span>
+                    <span class="fs-5 mb-3">A music application in which you can play songs, by automatically detecting
+                        from phone or scanning any specific folder</span>
                     <span>Libraries used: PDF Reader | Firebase Auth</span>
-                    <a  class="mt-4 linkbtn text-info projectlink" href="https://play.google.com/store/apps/details?id=com.assadcoorp.musicsd&hl=en&gl=US"
-                            class=" ">Check out project</a>
+                    <a class="mt-4 linkbtn text-info projectlink"
+                        href="https://play.google.com/store/apps/details?id=com.assadcoorp.musicsd&hl=en&gl=US"
+                        class=" ">Check out project</a>
                 </div>
                 <div class="verticalline"></div>
-                <div class="m-1  imgvertical"><a href="https://play.google.com/store/apps/details?id=com.assadcoorp.musicsd&hl=en&gl=US">
-                    <img src="./assets/imgs/music.PNG" width="212px" height="212px"></a></div>
+                <div class="m-1  imgvertical"><a
+                        href="https://play.google.com/store/apps/details?id=com.assadcoorp.musicsd&hl=en&gl=US">
+                        <img src="./assets/imgs/music.PNG" width="212px" height="212px"></a></div>
             </div>
 
 
@@ -337,15 +459,16 @@
             <div class=" my-5 mx-1 projectitem">
                 <div class="d-flex flex-column m-1  leftitem">
                     <span class="fs-2 fw-semibold textspecial mb-1">Ricerocks spaceship game</span>
-                    <span class="fs-6 mb-3">build on python based GUI</span>
-                    <span class="fs-5 mb-3">A GUI based spaceship game which a player has to destroy asteorids approaching it in limited lives.</span>
+                    <span class="fs-6 mb-3">build on python</span>
+                    <span class="fs-5 mb-3">A GUI based spaceship game which a player has to destroy asteorids
+                        approaching it in limited lives.</span>
                     <span>Libraries used: simplegui</span>
-                    <a  class="mt-4 linkbtn text-info projectlink" href="https://py2.codeskulptor.org/#user49_Bs7RRT5076_6.py"
-                            class=" ">Check out project</a>
+                    <a class="mt-4 linkbtn text-info projectlink"
+                        href="https://py2.codeskulptor.org/#user49_Bs7RRT5076_6.py" class=" ">Check out project</a>
                 </div>
                 <div class="verticalline"></div>
                 <div class="m-1  imgvertical"><a href="https://py2.codeskulptor.org/#user49_Bs7RRT5076_6.py">
-                    <img src="./assets/imgs/ricerocks.PNG" width="212px" height="212px"></a></div>
+                        <img src="./assets/imgs/ricerocks.PNG" width="212px" height="212px"></a></div>
             </div>
 
 
@@ -354,33 +477,35 @@
             <div class=" my-5 mx-1 projectitem">
                 <div class="d-flex flex-column m-1  leftitem">
                     <span class="fs-2 fw-semibold textspecial mb-1">Memory 5 by 10 Game</span>
-                    <span class="fs-6 mb-3">build on python based GUI</span>
-                    <span class="fs-5 mb-3">A python based game which includes graphial user interface, is played by one person and it have to memorize the numbers and find same cards to win it</span>
+                    <span class="fs-6 mb-3">build on python</span>
+                    <span class="fs-5 mb-3">A python based game which includes graphial user interface, is played by one
+                        person and it have to memorize the numbers and find same cards to win it</span>
                     <span>Libraries used: simplegui</span>
-                    <a  class="mt-4 linkbtn text-info projectlink" href="https://py2.codeskulptor.org/#user49_csdfIMZrrt_0.py"
-                            class=" ">Check out project</a>
+                    <a class="mt-4 linkbtn text-info projectlink"
+                        href="https://py2.codeskulptor.org/#user49_csdfIMZrrt_0.py" class=" ">Check out project</a>
                 </div>
                 <div class="verticalline"></div>
                 <div class="m-1  imgvertical"><a href="https://py2.codeskulptor.org/#user49_csdfIMZrrt_0.py">
-                    <img src="./assets/imgs/memory510.png" width="212px" height="212px"></a></div>
+                        <img src="./assets/imgs/memory510.png" width="212px" height="212px"></a></div>
             </div>
 
 
-        
+
 
             <hr class="my-5 mx-2" />
             <div class=" my-5 mx-1 projectitem">
                 <div class="d-flex flex-column m-1  leftitem">
                     <span class="fs-2 fw-semibold textspecial mb-1">2048 Game</span>
-                    <span class="fs-6 mb-3">build on python based GUI</span>
-                    <span class="fs-5 mb-3">It is a board base game where multiples of two are deployed and upon collision with same number they become double</span>
+                    <span class="fs-6 mb-3">build on python</span>
+                    <span class="fs-5 mb-3">It is a board base game where multiples of two are deployed and upon
+                        collision with same number they become double</span>
                     <span>Libraries used: simplegui</span>
-                    <a  class="mt-4 linkbtn text-info projectlink" href="https://py2.codeskulptor.org/#user49_EllxkmRjDI_108.py"
-                            class=" ">Check out project</a>
+                    <a class="mt-4 linkbtn text-info projectlink"
+                        href="https://py2.codeskulptor.org/#user49_EllxkmRjDI_108.py" class=" ">Check out project</a>
                 </div>
                 <div class="verticalline"></div>
                 <div class="m-1  imgvertical"><a href="https://py2.codeskulptor.org/#user49_EllxkmRjDI_108.py">
-                    <img src="./assets/imgs/2048.jfif" width="212px" height="212px"></a></div>
+                        <img src="./assets/imgs/2048.jfif" width="212px" height="212px"></a></div>
             </div>
 
 
@@ -388,6 +513,24 @@
 
 
 
+        </section>
+
+        <hr class="my-5 mx-5" />
+
+        <section id="about" class="mt-5 px-5 ">
+            <span class="fs-6">How am I doing</span>
+            <br>
+            <span class="fs-1 fw-semibold">About Me</span>
+            <div class="d-flex justify-content-between flex-wrap flex-md-nowrap">
+                <div><img class="img-fluid" src="./assets/imgs/aboutme.png" alt="" srcset=""></div>
+                <div class="maintxt ">
+                    <span class="fs-4">I am a programming enthusiast. I always have an eagerness to learn more about
+                        software and the latest technology.</span>
+                    <br><br>
+                    <span class="fs-4 mt-2">I advance on my own and strongly believe in self-learning. I learn all my
+                        skills through YouTube and other free resources, and I will continue to learn more.</span>
+                </div>
+            </div>
         </section>
 
         <hr class="my-5 mx-5" />

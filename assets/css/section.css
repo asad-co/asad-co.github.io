@@ -1,10 +1,17 @@
 .maintxt{
+    /* display: flex; */
+    /* flex-direction: column; */
     align-items: center;
     justify-content: center;
-    margin: auto;
+    height: 100%;
+    margin: auto auto;
 }
 .textspecial{
     color: blueviolet;
+}
+.textGenerate{
+    width: 50px !important;
+    font-size:20px;
 }
 section hr{
     background: rgb(248, 194, 247);
@@ -25,8 +32,21 @@ section hr{
     background-color: rgb(1, 1, 74);
 }
 
+@media (max-width:700px) {
+    #home{
+        flex-wrap: wrap;
+    }
+}
+
 @media (min-width:700px) {
+    .sectionPaddingX{
+        padding:0px 5% ;
+    }
     .partial{
         width: 50%;
     }
+    #home{
+        flex-wrap: nowrap;
+    }
+
 }
