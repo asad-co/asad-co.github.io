@@ -1,8 +1,6 @@
 .sideText {
     color: rgb(149, 241, 149);
     font-weight: bold;
-    width: 200px;
-    font-size: 18px;
     animation: rotateAnimation 1s ease-in-out infinite alternate; 
     text-align: center;
 }
@@ -16,12 +14,23 @@
     }
 }
 
+@media (max-width:400px) {
+    .sideText{
+        font-size: 13px;
+        width: 100px;
 
+    }
+}
 @media (max-width:700px) {
     .serviceItem{
         flex: 0 0 auto;
         width: 80%;
         margin: 15px 10px;
+    }
+    .sideText{
+        font-size: 15px;
+        width: 150px;
+
     }
     
 }
@@ -31,8 +40,14 @@
         width: 30.33333333%;
         margin: 15px 5px;
     }
+    .sideText{
+        font-size: 20px;
+        width: 200px;
+
+    }
 }
 @media (min-width:992px) {
+    
     .serviceItem{
         flex: 0 0 auto;
         width: 33.33333333%;

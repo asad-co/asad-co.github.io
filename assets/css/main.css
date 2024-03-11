@@ -1,6 +1,4 @@
-main{
-    margin-top: 20%;
-}
+
 main hr{
     background: rgb(248, 194, 247);
     border: 0px;
@@ -27,4 +25,19 @@ main hr{
 }
 .btnresume a:hover{
     color: rgb(248, 194, 247);
+}
+@media (min-width:300px) {
+    main{
+        margin-top: 20%;
+    }
+}
+@media (min-width:700px) {
+    main{
+        margin-top: 15%;
+    }
+}
+@media (min-width:900px) {
+    main{
+        margin-top: 10%;
+    }
 }

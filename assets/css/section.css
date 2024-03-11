@@ -31,8 +31,17 @@ section hr{
 .linkbtn{
     background-color: rgb(1, 1, 74);
 }
-
+@media (max-width:400px) {
+    .sectionPaddingX{
+        margin-right: 0.51rem !important;
+        margin-left: 0.51rem !important
+    }
+}
 @media (max-width:700px) {
+    .sectionPaddingX{
+        margin-right: 1rem !important;
+        margin-left: 1rem !important
+    }
     #home{
         flex-wrap: wrap;
     }
@@ -40,13 +49,16 @@ section hr{
 
 @media (min-width:700px) {
     .sectionPaddingX{
-        padding:0px 5% ;
+        margin-right: 3rem !important;
+        margin-left: 3rem !important
     }
     .partial{
         width: 50%;
     }
     #home{
         flex-wrap: nowrap;
+        justify-content: space-around;
+
     }
 
 }

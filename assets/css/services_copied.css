@@ -82,6 +82,7 @@ body {
 .planItem--pro .label {
   --labelBg: #0a6e34;
   --labelColor: #fff;
+  animation: rotateAnimation 0.5s ease-in-out infinite alternate;
 }
 .planItem--entp {
   --bgColor: #350101;
