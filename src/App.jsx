@@ -29,6 +29,7 @@ function App() {
 
         <div className="instructions">
           WASD: Move<br />
+          Shift: Sprint<br />
           Space: Jump<br />
           Mouse: Look around<br />
           ESC: Exit Controls

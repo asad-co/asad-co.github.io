@@ -11,6 +11,8 @@ const useKeyboard = () => {
         KeyA: false,
         KeyD: false,
         Space: false,
+        ShiftLeft: false,
+        ShiftRight: false,
     })
 
     useEffect(() => {
@@ -58,7 +60,7 @@ export const Player = () => {
         camera.position.set(pos.current[0], pos.current[1] + 0.75, pos.current[2])
 
         // 2. Void check (if player somehow clips through walls)
-        if (pos.current[1] < -10) {
+        if (pos.current[1] < -20) {
             api.position.set(...spawnPos)
             api.velocity.set(0, 0, 0)
         }
@@ -74,7 +76,12 @@ export const Player = () => {
 
         // Lock Y movement
         direction.y = 0
-        direction.normalize().multiplyScalar(5)
+
+        // SPRINT LOGIC: If Shift is pressed, multiply speed
+        const isSprinting = keys.ShiftLeft || keys.ShiftRight
+        const speed = isSprinting ? 10 : 5
+
+        direction.normalize().multiplyScalar(speed)
 
         // Snappy STOP: If no keys are pressed, set horizontal velocity to 0
         if (keys.KeyW || keys.KeyS || keys.KeyA || keys.KeyD) {
