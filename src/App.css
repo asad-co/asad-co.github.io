@@ -1,0 +1,7 @@
+/* Clean slate for 3D experience */
+.canvas-container {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  background: #050805;
+}
