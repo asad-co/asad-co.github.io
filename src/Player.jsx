@@ -26,7 +26,7 @@ const useKeyboard = () => {
         }
     }, [])
 
-    return keys.current
+    return keys
 }
 
 // Reusable vectors to avoid memory churn
@@ -66,8 +66,8 @@ export const Player = () => {
         }
 
         // 3. Movement Logic
-        frontVector.set(0, 0, Number(keys.KeyS) - Number(keys.KeyW))
-        sideVector.set(Number(keys.KeyA) - Number(keys.KeyD), 0, 0)
+        frontVector.set(0, 0, Number(keys.current.KeyS) - Number(keys.current.KeyW))
+        sideVector.set(Number(keys.current.KeyA) - Number(keys.current.KeyD), 0, 0)
 
         direction
             .subVectors(frontVector, sideVector)
@@ -78,13 +78,13 @@ export const Player = () => {
         direction.y = 0
 
         // SPRINT LOGIC: If Shift is pressed, multiply speed
-        const isSprinting = keys.ShiftLeft || keys.ShiftRight
+        const isSprinting = keys.current.ShiftLeft || keys.current.ShiftRight
         const speed = isSprinting ? 10 : 5
 
         direction.normalize().multiplyScalar(speed)
 
         // Snappy STOP: If no keys are pressed, set horizontal velocity to 0
-        if (keys.KeyW || keys.KeyS || keys.KeyA || keys.KeyD) {
+        if (keys.current.KeyW || keys.current.KeyS || keys.current.KeyA || keys.current.KeyD) {
             api.velocity.set(direction.x, velocity.current[1], direction.z)
         } else {
             // Apply horizontal friction/stop while preserving falling gravity
@@ -92,7 +92,7 @@ export const Player = () => {
         }
 
         // 4. Jump Logic
-        if (keys.Space && Math.abs(velocity.current[1]) < 0.1) {
+        if (keys.current.Space && Math.abs(velocity.current[1]) < 0.1) {
             api.velocity.set(velocity.current[0], 4.5, velocity.current[2])
         }
     })

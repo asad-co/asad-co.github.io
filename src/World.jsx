@@ -1,6 +1,8 @@
 import { useBox, usePlane } from "@react-three/cannon"
-import { useTexture, Environment } from "@react-three/drei"
+import { Environment, useTexture } from "@react-three/drei"
+import { useMemo } from "react"
 import * as THREE from "three"
+import { Ground } from "./Ground"
 
 function Cube({ position, color = "white", ...props }) {
     const [ref] = useBox(() => ({ mass: 1, position, ...props }))
@@ -16,14 +18,22 @@ function Wall({ position, args, color = "white", texturePath }) {
     const [ref] = useBox(() => ({ type: "Static", position, args }))
 
     // Load the texture
-    const texture = useTexture(texturePath || "/brick_diffuse.jpg")
-    texture.wrapS = texture.wrapT = THREE.RepeatWrapping
-    texture.anisotropy = 16
+    const baseTexture = useTexture(texturePath || "/brick_diffuse.jpg")
+    const texture = useMemo(() => {
+        const t = baseTexture.clone()
+        t.wrapS = t.wrapT = THREE.RepeatWrapping
+        t.anisotropy = 16
+        t.needsUpdate = true
+        return t
+    }, [baseTexture])
 
     // Create a texture clone specifically for this wall's dimensions to avoid repeat conflicts
-    const wallTexture = texture.clone()
-    wallTexture.repeat.set(args[0] / 4, args[1] / 4)
-    wallTexture.needsUpdate = true
+    const wallTexture = useMemo(() => {
+        const t = texture.clone()
+        t.repeat.set(args[0] / 4, args[1] / 4)
+        t.needsUpdate = true
+        return t
+    }, [texture, args])
 
     // We use an array of 6 materials for each face of the box to prevent stretching
     // Order: [pos-x, neg-x, pos-y, neg-y, pos-z, neg-z]
@@ -57,11 +67,6 @@ export function World() {
         position: [0, 0, 0]
     }))
 
-    const groundTexture = useTexture("/grid.png")
-    groundTexture.wrapS = groundTexture.wrapT = THREE.RepeatWrapping
-    groundTexture.anisotropy = 16
-    groundTexture.repeat.set(50, 50)
-
     return (
         <>
             {/* Soft night atmosphere */}
@@ -77,16 +82,12 @@ export function World() {
                 shadow-mapSize={[2048, 2048]}
             />
 
-            {/* Floor */}
-            <mesh ref={floorRef} receiveShadow>
+            {/* Physics ground (invisible), visuals handled by <Ground /> */}
+            <mesh ref={floorRef} visible={false}>
                 <planeGeometry args={[1000, 1000]} />
-                <meshStandardMaterial
-                    map={groundTexture}
-                    color="#151a15"
-                    roughness={0.2}
-                    metalness={0.1}
-                />
             </mesh>
+
+            <Ground />
 
             {/* Boundary Walls - Using White tint so the green-tinted texture (if any) or actual color shows correctly */}
             {/* We position them so the Z-face is the main viewable face when possible */}
